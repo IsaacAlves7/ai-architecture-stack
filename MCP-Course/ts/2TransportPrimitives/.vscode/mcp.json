@@ -1,0 +1,14 @@
+{
+    "servers": {
+        "mcp-server-hello-name": {
+            "command": "tsx",
+            "args": [
+                "src/MainStdio.ts"
+            ],
+            "env": {}
+        },
+        // "mcp-server-hello-name-http": {
+        //     "url": "http://localhost:4000/mcp"
+        // }
+    }
+}
