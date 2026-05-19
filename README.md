@@ -1,3 +1,4 @@
+# AI Architecture Stack
 Esse diagrama mostra uma arquitetura completa para construir um sistema de IA moderno praticamente sem custo de infraestrutura inicial (“$0 AI Architecture Stack”). A ideia central dele é montar um ecossistema inteiro de agentes inteligentes, RAG, ferramentas, bancos de dados e deploy usando ferramentas gratuitas, open source ou com free tier. O fluxo foi desenhado como uma pipeline de execução onde cada camada possui uma responsabilidade específica, quase como se fosse um sistema operacional para agentes de IA.
 
 <img width="1080" height="1440" alt="701369417_897213193378427_9113190229652519570_n" src="https://github.com/user-attachments/assets/97221244-b3b4-4a3b-b8ca-f8d0f514828e" />
@@ -22,6 +23,7 @@ Existe ainda uma camada lateral chamada Observability Layer, usando Phoenix. Iss
 
 Por fim, existe a Deployment Layer com Docker, Cloudflare e Hugging Face Spaces. Essa camada coloca tudo em produção. Docker empacota a aplicação inteira em containers reproduzíveis. Cloudflare Workers ajuda em edge computing e baixa latência global. Hugging Face Spaces facilita deploy gratuito de demos e aplicações de IA.
 
+## [AI] Improvements
 Agora, sobre melhorias futuras, existe MUITA coisa interessante que poderia evoluir nessa arquitetura.
 
 A primeira melhoria seria implementar memória de longo prazo real. Atualmente o diagrama mostra RAG e armazenamento, mas não uma memória episódica persistente sofisticada. Poderia ser adicionado um sistema de “agent memory” com camadas semânticas, temporais e hierárquicas. Isso faria os agentes lembrarem preferências, decisões passadas e aprendizados acumulados.
