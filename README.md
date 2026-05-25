@@ -1,9 +1,12 @@
 # AI Architecture Stack
 Esse diagrama mostra uma arquitetura completa para construir um sistema de IA moderno praticamente sem custo de infraestrutura inicial (“$0 AI Architecture Stack”). A ideia central dele é montar um ecossistema inteiro de agentes inteligentes, RAG, ferramentas, bancos de dados e deploy usando ferramentas gratuitas, open source ou com free tier. O fluxo foi desenhado como uma pipeline de execução onde cada camada possui uma responsabilidade específica, quase como se fosse um sistema operacional para agentes de IA.
 
-<img width="1080" height="1440" alt="701369417_897213193378427_9113190229652519570_n" src="https://github.com/user-attachments/assets/97221244-b3b4-4a3b-b8ca-f8d0f514828e" />
-
-<img width="720" height="895" alt="Screenshot_20240705-220020_Instagram" src="https://github.com/user-attachments/assets/f305f1a9-28db-499a-a7a4-3a8500bdb7ea" />
+<table>
+  <tr>
+    <td><img width="1080" height="1440" alt="701369417_897213193378427_9113190229652519570_n" src="https://github.com/user-attachments/assets/97221244-b3b4-4a3b-b8ca-f8d0f514828e" /></td>
+    <td><img width="720" height="895" alt="Screenshot_20240705-220020_Instagram" src="https://github.com/user-attachments/assets/f305f1a9-28db-499a-a7a4-3a8500bdb7ea" /></td>
+  </tr>
+</table>
 
 A primeira camada é a de entrada do usuário (“User Input”), que representa qualquer interface pela qual uma pessoa conversa com a IA: navegador, celular, dashboard, chatbot, aplicativo SaaS ou sistema interno. Essa entrada segue para o Frontend Layer, onde aparecem tecnologias como Next.js, Streamlit e Vercel. O papel dessa camada é transformar a interação humana em requisições organizadas para o sistema de agentes. O Next.js é ideal para aplicações web mais robustas e escaláveis, Streamlit serve muito bem para protótipos rápidos e dashboards de IA, enquanto a Vercel hospeda tudo gratuitamente no começo do projeto. Em termos arquiteturais, essa camada funciona como a “casca” visível do sistema.
 
